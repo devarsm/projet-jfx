@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="498.0" prefWidth="287.0" style="-fx-background-color: #895959;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="159.0" fitWidth="236.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/about-us.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="287.0" prefHeight="498.0" prefWidth="427.0" style="-fx-background-color: #B78178;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="70.0" layoutY="139.0" prefHeight="232.0" prefWidth="269.0" style="-fx-background-color: #895959;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="197.0" layoutY="61.0" text="البريد الالكتروني">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Label>
+                  <Label layoutX="225.0" layoutY="141.0" text="كلمة السر ">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Label>
+                  <TextField fx:id="email" layoutX="25.0" layoutY="61.0" />
+                  <TextField fx:id="password" layoutX="25.0" layoutY="137.0" />
+                  <Button fx:id="submit" layoutX="75.0" layoutY="199.0" mnemonicParsing="false" onAction="#verifier" prefHeight="25.0" prefWidth="136.0" text="تسجيل الدخول" />
+                  <Label fx:id="labelmsg" layoutX="93.0" layoutY="247.0" textFill="RED">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
